@@ -1,6 +1,5 @@
 import discord
-
-import discord
+import time
 
 client = discord.Client()
 
@@ -13,8 +12,8 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('$'):
-        if message.content.
-        await message.channel.send('Hello!')
+    if message.content.startswith('$spam'):
+        for i in range(1,6):
+            await message.channel.send('Hello!')
 
-client.run('NzY5NjM1NTk2OTAxMjg1OTE2.X5R5AQ.igJkJUQV9np2lG0zSlajp8vIAFY')
+client.run('TOKEN')
